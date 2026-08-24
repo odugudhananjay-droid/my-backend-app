@@ -4,7 +4,7 @@ import time
 
 app = FastAPI()
 
-# testing a new feature branch
+# testing a new features branch
 
 @app.get("/")
 def home():
