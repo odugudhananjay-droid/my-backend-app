@@ -48,3 +48,10 @@ def check_website(url: str):
             "status_code": None,
             "response_time": None
         }
+
+@app.get("/kesava")
+def kesava():
+    return {
+        "message": "Kesava is running"
+    }
+

@@ -26,3 +26,11 @@ def test_check_website_down():
     data = response.json()
     assert data["status"] == "DOWN"
     assert data["status_code"] is None
+
+
+def test_kesava():
+    response = client.get("/kesava")
+    assert response.status_code == 200
+    assert response.json() == {
+        "message": "Kesava is running"
+    }
